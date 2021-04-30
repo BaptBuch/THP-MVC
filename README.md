@@ -1,1 +1,1 @@
-Welcome to a Ruby program !
+BIENVENUE DANS THE GOSSIP PROJECT
