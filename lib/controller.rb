@@ -19,8 +19,13 @@ class Controller
   end
 
   def index_gossips
-    print @all_gossips
-    @view.index_gossips(@gossips)
+    @view.index_gossips(Gossip.all)
+  end
+
+  def delete_gossip
+    all_gossips = Gossip.all
+    Gossip.delete
+    @view.delete_gossip(all_gossips)
   end
 
 end

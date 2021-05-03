@@ -13,6 +13,7 @@ class Router
       puts "Tu veux faire quoi jeune mouss' ?"
       puts "1. Je veux créer un gossip"
       puts "2. Je veux voir la liste de tous les potins"
+      puts "3. Je veux supprimer un potin"
       puts "4. Je veux quitter l'app"
       params = gets.chomp.to_i
 
@@ -23,6 +24,9 @@ class Router
 
       when 2
         @controller.index_gossips
+
+      when 3
+        @controller.delete_gossip
 
       when 4
         puts "À bientôt !"
